@@ -1,0 +1,33 @@
+body{
+    position: absolute;
+    z-index: 999;
+}
+
+h4{
+
+    color : rgb(255, 2, 2);
+    text-decoration: underline red;
+
+}
+h5{
+    border-bottom: 2px solid #fd0e0e;
+    color: white;
+
+}
+.paragraph {
+    text-align: right;
+    font-size: small;
+    line-height: 2px;
+
+}
+<style>
+ #content{
+     width: 960px;
+     margin: 0px auto;
+     </style>
+
+
+
+
+
+
