@@ -2,15 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Padlock Club</title>
+    <title>Ve</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="css/project2.css"/>
+    <link rel="stylesheet" href="css/testlancuoi.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/fontawesome/css/all.css"/>
 </head>
 <body>
 <header class="section">
-    <div class="container">
-
-    </div>
+    <ul class="menu">
+        <a class="logo" href="#">
+            <img src="imgs/logo.png" width="auto" height="90">
+        </a>
+        <li><a href="#"><strong><i>Trang Chủ</i></strong></li>
+        <li>
+            <a href="#"><strong><i>Vé</i></strong></a>
+            <ul class="submenu">
+                <li>
+                    <a href="#">F1® PADDOCK CLUB™</a>
+                </li>
+                <li>
+                    <a href="#">Vé Doanh Nghiệp</a>
+                </li>
+                <li>
+                    <a href="#">Vé Khán Đài</a>
+                </li>
+                <li>
+                    <a href="#">Vé Phổ Thông</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><strong><i>Thư Viện</i></strong></a>
+            <ul class="submenu2">
+                <li>
+                    <a href="#">Du lịch Việt Nam</a>
+                </li>
+                <li>
+                    <a href="#">Khám Phá Hà Nội</a>
+                </li>
+                <li>
+                    <a href="#">Khách Sạn</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#"><strong><i>Tin Tức</i></strong></a></li>
+        <li><a href="#"><strong><i>Đối Tác</i></strong></a></li>
+        <li><a href="#"><strong><i>Đăng Ký</i></strong></a></li>
+    </ul>
 </header>
 <section class="main section">
     <div class="container">
@@ -127,6 +166,76 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="footer">
+        <div class="footer_menu">
+            <div class="col_1">
+                <div class="title">
+                    Company
+                </div>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col_2">
+                <div class="title">
+                    Help & Support
+                </div>
+                <ul>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Call Center</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col_3">
+                <div class="title">
+                    Services
+                </div>
+                <ul>
+                    <li><a href="#">Business Consultancy</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Market Analysis</a></li>
+                    <li><a href="#">Web Development</a></li>
+                </ul>
+            </div>
+            <div class="col_4">
+                <div class="title">
+                    Solutions
+                </div>
+                <ul>
+                    <li><a href="#">Facilities Services</a></li>
+                    <li><a href="#">Workplace Staffing</a></li>
+                    <li><a href="#">Project Management</a></li>
+                    <li><a href="#">Wordpress Management</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="partners">
+            <ul>
+                <li><a class="partner1" href="#"></a></li>
+                <li><a class="partner2" href="#"></a></li>
+                <li><a class="partner3" href="#"></a></li>
+                <li><a class="partner4" href="#"></a></li>
+                <li><a class="partner5" href="#"></a></li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <ul>
+                <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+            <p>Copyright © Quán Thanh Tú</p>
+        </div>
+    </div>
+    </div>
+</footer>
+
 <script type="text/javascript">
     function popup() {
         document.getElementById("popup").style.opacity = 1;
@@ -140,6 +249,29 @@
         document.getElementById("popup").style.opacity = 0;
         document.getElementById("bg-fade").style.opacity = 0;
     }
+</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(".menu > li").bind("mouseenter",function () {
+        $(".submenu").hide();
+        $(this).children(".submenu").slideDown();
+    });
+    $(".menu > li").bind("mouseleave",function () {
+        $(".submenu").hide();
+    });
+    $(".menu > li").bind("mouseenter",function () {
+        $(".submenu2").hide();
+        $(this).children(".submenu2").slideDown();
+    });
+    $(".menu > li").bind("mouseleave",function () {
+        $(".submenu2").hide();
+    });
+</script>
+<script type="text/javascript">
+    window.addEventListener("scroll",function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
 </script>
 </body>
 </html>
