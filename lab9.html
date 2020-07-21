@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 9</title>
+    <link rel="stylesheet" href="css/lab9.css">
+</head>
+<body>
+<h1>Xac dinh vi tri trong TABS</h1>
+<button class="btn" onclick="home()">Home</button>
+<div id="home">
+    <p>home</p>
+</div>
+<button class="btn" onclick="profiles()">Profiles</button>
+<div id="profiles">
+    <p>profiles</p>
+</div>
+<button class="btn" onclick="messenges()">Messenges</button>
+<div id="messenges">
+    <p>messenge</p>
+</div>
+<button class="btn" onclick="settings()">Settings</button>
+<div id="settings">
+    <p>settings</p>
+</div>
+<script type="text/javascript">
+
+    function home() {
+        //document.getElementById("popup").style.zIndex = 11;
+        //document.getElementById("bg-fade").style.zIndex = 9";
+        //document.getElementById("bg-fade").style.opacity = 1;
+        //document.getElementById("bg-fade").style.opacity = 1;
+        document.getElementById("home").style.display = "block";
+        document.getElementById("profiles").style.display = "none";
+        document.getElementById("messenges").style.display = "none";
+        document.getElementById("home").style.display = "none";
+    }
+    function profiles() {
+        //document.getElementById("popup").style.zIndex = 11;
+        //document.getElementById("bg-fade").style.zIndex = 9";
+        //document.getElementById("bg-fade").style.opacity = 1;
+        //document.getElementById("bg-fade").style.opacity = 1;
+        document.getElementById("home").style.display = "none";
+        document.getElementById("profiles").style.display = "block";
+        document.getElementById("messenges").style.display = "none";
+        document.getElementById("settings").style.display = "none";
+    }
+    function messenges() {
+        //document.getElementById("popup").style.zIndex = 11;
+        //document.getElementById("bg-fade").style.zIndex = 9";
+        //document.getElementById("bg-fade").style.opacity = 1;
+        //document.getElementById("bg-fade").style.opacity = 1;
+        document.getElementById("home").style.display = "none";
+        document.getElementById("profiles").style.display = "none";
+        document.getElementById("messenges").style.display = "block";
+        document.getElementById("home").style.display = "none";
+    }
+    function settings() {
+        //document.getElementById("popup").style.zIndex = 11;
+        //document.getElementById("bg-fade").style.zIndex = 9";
+        //document.getElementById("bg-fade").style.opacity = 1;
+        //document.getElementById("bg-fade").style.opacity = 1;
+        document.getElementById("home").style.display = "none";
+        document.getElementById("profiles").style.display = "none";
+        document.getElementById("messenges").style.display = "none";
+        document.getElementById("home").style.display = "block";
+    }
+
+</script>
+</body>
+</html>
