@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data</title>
+    <link rel="stylesheet" type="text/css" href="lib/fontawesome/css/all.css"
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+    <form method="post" action="#">
+        <label><i class="fas fa-users"></i>Username</label><br/><br/>
+        <input type="text" name="username" placeholder="Username.." required/><br/><br/>
+        <label><i class="fas fa-envelope"></i>Mail</label><br/><br/>
+        <input type="email" name="email" placeholder="Email.." required/><br/><br/>
+        <label><i class="fas fa-key"></i>Password</label><br/><br/>
+        <input type="password" name="user_password" placeholder="Password" required/><br/><br/>
+        <label><input type="checkbox" name="ready"/>I'm ready</label><br/><br/>
+        <label><input type="radio" name="sex" value="male"/>Male</label><br/>
+        <label><input type="radio" name="sex" value="famale"/>Famale</label><br/>
+        <label><input type="radio" name="sex" value="other"/>Other</label><br/><br/>
+        <input type="date" name="birthday" placeholder="Ngay Sinh" required/><br/><br/>
+        <input type="color" name="mycolor" placeholder="Color.." required/><br/><br/>
+        <input type="time" name="time" placeholder="Gio Sinh" required/><br/><br/>
+        <input type="month" name="month" placeholder="Thang sinh" required/><br/><br/>
+        <input type="number" name="money" placeholder="Money.." required/><br/><br/>
+        <input type="range" name="volume"min="0" max="300" placeholder="Range.." required/><br/><br/>
+        <input type="file" name="avatar" placeholder="Avatar" required/><br/><br/>>
+        <input type="hidden" name="server_token" value="aljaksdhasdasdasdasldkj28asd"/><br/><br/>
+
+        <select name="falcuty" multiple>
+            <option value="toan">Toan</option>
+            <option value="dientu">Dien tu</option>
+            <option value="cntt">Cong nghe thong tin</option>
+            <option value="hatnhan">Khoa hoc hat nhan</option>
+            <option value="kthangkhong">Ky thuat hang khong</option>
+        </select><br/><br/>
+
+        <textarea name="tieusubanthan" rows="5" cols="100" placeholder="Tieu su ban than ..">
+
+        </textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+    </form>
+
+</body>
+</html>

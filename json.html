@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+</head>
+<body>
+<h1 id="temp"></h1>
+<h2 id="temp_min"></h2>
+<h3 id="temp_max"></h3>
+<h3 id="pressure"></h3>
+<h3 id="sea_level"></h3>
+<h3 id="grnd_level"></h3>
+<h3 id="humidity"></h3>
+<h3 id="temp_kf"></h3>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+    let api_url ="http://api.openweathermap.org/data/2.5/forecast";
+    $.ajax({
+        url: api_url,
+        method: "GET",
+        data:{
+            q:"Hanoi,vietnam",
+            appid:"09a71427c59d38d6a34f89b47d75975c",
+            unit:"metric"
+        },
+        success: function (rs) {
+            $("#temp").text(rs.main.temp);
+            $("#temp_min").text(rs.main.temp_min);
+            $("#temp_max").text(rs.main.temp_max);
+            $("#pressure").text(rs.main.pressure);
+            $("#sea_level").text(rs.main.sea_level);
+            $("#grnd_level").text(rs.main.grnd_level);
+            $("#humidity").text(rs.main.humidity);
+            $("#temp_kf").text(rs.main.temp_kf);
+        }
+    });
+</script>
+</body>
+</html>

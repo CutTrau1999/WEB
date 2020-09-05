@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 3</title>
+</head>
+<body>
+    <h1 id="heading">Ten lop:</h1>
+    <h2 id="sub-heading1">Giao vien</h2>
+    <h2 id="sub-heading2">Phong hoc</h2>
+    <h3> Danh sach sinh vien:</h3>
+    <ul id="students"></ul>
+
+    <script type="text/javascript">
+    let classObj = {
+        name: "T2004E",
+        room: "A8",
+        teacher: {
+            name: "Trinh Quang Hoa",
+            age: 18
+        },
+        dssv:[
+            {
+                name: "Nguyen Van A",
+                age: 19
+            },
+            {
+                name: "Nguyen Van A",
+                age: 19
+            },
+            {
+                name: "Nguyen Van A",
+                age: 19
+            },
+            {
+                name: "Nguyen Van A",
+                age: 19
+            },
+            {
+                name: "Nguyen Van A",
+                age: 19
+            },
+            {
+                name: "Nguyen Van A",
+                age: 19
+            },
+            {
+                name: "Nguyen Van A",
+                age: 19
+            },
+            {
+                name: "Nguyen Van A",
+                age: 19
+            }
+        ],
+
+    }
+
+    let h1 = document.getElementById("heading");
+   // console.log(h1.innerText);
+ //   h1.innerText = "xin chao cac ban";
+ //   h1.style.color = "red";
+ //   h1.style.backgroundColor = "yellow";
+ //   h1.style.borderBottom = "1px solid green";
+  //  h1.innerHTML = "<i>"+h1.innerText+"</i>"
+        h1.innerText = h1.innerText+ classObj.name;
+        let h2_s1 = document.getElementById("sub-heading1");
+        h2_s1.innerText = h2_s1.innerText+ classObj.teacher.name;
+        let h2_s2 = document.getElementById("sub-heading2");
+        h2_s2.innerText = h2_s2.innerText+ classObj.room;
+        let ul = document.getElementById("students");
+        classObj.dssv.map(function (e) {
+            let li = "<li>"+e.name+"</li>";
+            h2_s2.innerHTML = "<i>"+h2.innerText+"</i>"
+        });
+</script>
+
+</body>
+</html>

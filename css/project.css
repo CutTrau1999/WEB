@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    background-color: beige;
+    color: #333333;
+    font-weight: 400;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.header, .main, .footer{
+    float:left;
+    width: 100%;
+}
+.header{
+    position: fixed;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-left{
+    float: left;
+    width: 20%;
+}
+.header-right{
+    float: right;
+    width: 60%;
+}
+.content{
+    float: left;
+    width: 90%;
+}
+.sidebar{
+    float: right;
+    width: 10%;
+}
+.header{
+    background-color: white;
+    padding: 10px 0;
+}
+.menu li {
+    float: right;
+    margin-left: 35px;
+    padding: 10px 0;
+    list-style: none;
+}
+.logo{
+    border-max
+}
+.header-right2{
+    float: left;
+    width: 60%;
+}
+.menu li a{
+    float: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+.menu2 li {
+    float: right;
+    margin-left: 35px;
+    padding: 10px 0;
+    list-style: none;
+.menu2 li a {
+    float: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #0c0c0c;
+    font-weight: 600;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    float: left;
+    width: 300px;
+    border-bottom: 1px solid black;
+}
+
+

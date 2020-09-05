@@ -1,0 +1,41 @@
+div{
+    width: 600px;
+    height: 200x;
+    float: left;
+    border: 1px solid white;
+    padding: 1px 1px 1px 1px;
+    margin: 1px;
+    background-color: beige;
+}
+.image{
+    border: solid beige;
+}
+.content{
+    width: 200px;
+    height: 155px;
+    border: 1px solid beige;
+    background-color: yellow;
+    float: left;
+    margin: 3px;
+}
+}
+.kohieugi{
+    width: 215px;
+    height: 155px;
+    border: 1px solid red;
+    background-color: red;
+    float: left;
+    margin: 1px;
+
+}
+p{
+    font-size: small;
+}
+h4{
+    color: orange;
+}
+.theloai{
+    color: orange;
+    text-decoration: ;
+}
+

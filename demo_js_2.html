@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let obj = {
+            name: "Nguyen Van An",
+            age: 18,
+            address: "8 Ton That Thuyet",
+            run: function () {
+                console.log(this.name + " is running...");
+            },
+            girlfriends:[
+                "Ngoc Trinh","Phuong Trinh"
+            ],
+            goToHotel: function(){
+                //for (let i=0;i<this.girlfriends.length;i++){
+                 //   console.log("Di hotel vs "+this.girlfriends[i]);
+                //}
+                this.girlfriends.map(function (e) {
+                    console.log("Di hotel voi "+e);
+
+                })
+            },
+            children: {
+                name: "Nguyen van Binh",
+                birthday: "22-5-1999",
+
+                children: {
+                    name: "Nguyen Van Nam",
+                    eat: function () {
+                        console.log("Uong sua");
+                        return this;
+                    },
+                    sleep: function () {
+                        console.log("Di ngu");
+                        return this;
+                    }
+                }
+            }
+        };
+        console.log(obj.name);
+        console.log(obj.address);
+        obj.run();
+        console.log("Ten cua con la :"+obj.children.name);
+        console.log("Ten cua chau la :"+obj.children.children.name);
+        obj.children.children.eat();
+        obj.children.children.sleep();
+        //obj.children.children.eat.sleep();
+        obj.name = "Nguyen Van Anh";
+        console.log(obj.name);
+    </script>
+</body>
+</html>

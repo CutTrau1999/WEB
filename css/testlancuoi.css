@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    min-height: 200vh;
-}
 header{
     position: fixed;
     top: 0;
@@ -17,22 +14,32 @@ header{
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 100;
-    background-color: #fd0e0e;
+    background-color: #ff3900;
+}
+header.section{
+    float: right;
 }
 header.sticky{
-    padding: 5px 100px;
+    padding: 5px 50px;
     background: #c11615;
+}
+.menu-left{
+    float: left;
 }
 header .logo{
     position: relative;
     transition: 0.6s;
+    float: left;
 }
 header ul{
-    margin-right: 50px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+ul.menu{
+    float: right;
+    width: 100%;
 }
 header ul li{
     position: relative;
@@ -45,26 +52,28 @@ header ul li a{
     font-weight: 500px;
     transition: 0.6s;
     font-size: large;
+    float: right;
 }
 .submenu{
     display: none;
     position: absolute;
-    top: 30px;
-    width: 250px;
-    text-align: center;
-    margin-right: 500px;
-    left: -60px;
-    background-color:rgb(0,0,0);opacity:0.8;
+    top: 20px;
+    width: 100px;
+    text-align: left;
+    margin-right: 200px;
+    left: 30px;
+    background-color:#ff3900;opacity:0.8;
+    float: left;
 }
 .submenu2{
     display: none;
     position: absolute;
-    top: 30px;
+    top: 20px;
     width: 250px;
     text-align: center;
     margin-right: 500px;
     left: -65px;
-    background-color:rgb(0,0,0);opacity:0.8;
+    background-color:#ff3900;opacity:0.8;
 }
 header .sticky .logo,
 header .sticky ul li a{
