@@ -54,8 +54,7 @@
     height: auto;
     margin-bottom: 30px;
 //  border: 1px solid blue;
-    border-bottom: 1px solid #efefef;
-    padding: 20px 0;
+    padding: 10px 0;
 
 }
 
@@ -64,7 +63,6 @@
     height: auto;
     margin-bottom: 10px;
 //  border: 1px solid blue;
-    padding: 10px 0;
     float: left;
     border-bottom: 1px solid #efefef;
     padding: 20px 0;
@@ -154,6 +152,38 @@
     width: 100%;
 
 }
+
+.subscribe{
+    width: auto;
+    height: auto;
+    background-color: purple;
+    float: right;
+    padding: 10px;
+}
+
+.text-subscribe{
+    color: white;
+    font-size: 15px;
+
+}
+
+.video-action{
+    border-bottom: 1px solid #efefef;
+    width: auto;
+    padding-bottom: 50px;
+}
+.like{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.sub{
+    float: right;
+    margin-left: 5px;
+}
+
 iframe{
     border-radius: 5px;
 }
