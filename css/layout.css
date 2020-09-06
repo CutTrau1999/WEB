@@ -25,15 +25,7 @@ a, body {
 .header, .main, .footer{
     float:left;
     width: 100%;
-}
-.container{
-    width: 1200px;
-    height: auto;
-    margin: 0 auto;
-    background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-top: 200px;
+    background-color: beige;
 }
 .header-left{
     float: left;
@@ -58,7 +50,8 @@ a, body {
 
 #wrap {
     width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
+    height: auto;
 }
 
 .list{
@@ -80,7 +73,6 @@ a, body {
     height: auto;
     margin-top: 10px;
 }
-
 
 
 

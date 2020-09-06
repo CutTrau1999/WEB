@@ -31,21 +31,21 @@
 .ranking{
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 //  border: 1px solid blue;
 }
 
 .songname{
     width: 100%;
     height: auto;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 // border: 1px solid blue;
 }
 
 .artistname{
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 // border: 1px solid blue;
 }
 
@@ -54,8 +54,7 @@
     height: auto;
     margin-bottom: 30px;
 //  border: 1px solid blue;
-    padding: 5px 0;
-
+    padding: 10px 0;
 
 }
 
@@ -74,7 +73,6 @@
     height: auto;
     margin-bottom: 10px;
 //  border: 1px solid blue;
-    padding: 10px 0;
     float: left;
     border-bottom: 1px solid #efefef;
     padding: 20px 0;
@@ -191,4 +189,14 @@ iframe{
 
 h3{
     line-height: 80px;
+}
+
+.link{
+    font-size: 16px;
+    font-weight: 500;
+    color: #32323d;
+    line-height: 1.45;
+    margin: 8px 0 3px;
+    text-transform: capitalize;
+    text-decoration: none;
 }

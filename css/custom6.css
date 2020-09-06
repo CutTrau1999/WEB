@@ -1,0 +1,73 @@
+.x-search{
+    width: 100%;
+    height: 1000px;
+    margin-top: 30px;
+}
+.x-artist{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 30px 30px;
+    border-bottom: 1px solid #efefef;
+    background-color: white;
+
+}
+
+.x-song{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 50px;
+    padding: 30px 30px;
+    background-color: white;
+}
+.z-artist{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+}
+
+
+.avatar-z{
+    border-radius: 50%;
+    margin-top: 30px;
+    float: left;
+}
+.x-artist-info{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.picture-z{
+    width: 250px;
+    height: 150px;
+// border: 1px solid red;
+    margin-right: 5px;
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.z-song-info{
+    width: auto;
+    height: auto;
+
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.z-song{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 30px;
+}
