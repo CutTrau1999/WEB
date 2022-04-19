@@ -18,19 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     <td>
                         <button>
                         <a href="details.html?id=${data[i].id}" class="btn-edit">Watch Now!</a>
-                        </button>
-
-<!--                        <button href="#" class="bt">Add to Cart</button>-->
-                    </td>
-                </tr>`;
+                        </button>                         
+  `;
             }
-            tableBody.innerHTML = newContent; // thay đổi nội dung table.
+            tableBody.innerHTML = newContent;
         }
     };
     xmlHttpRequest.open('get', 'http://localhost:8088/api/videos', false);
     xmlHttpRequest.send();
 
-    // kiểm tra nếu click vào btn delete thì sẽ delete Product đó đi
+
     document.body.addEventListener('click', function (event) {
         if (event.target.className === 'btn-delete') {
             if (confirm('Are you sure you want to delete?')) {
